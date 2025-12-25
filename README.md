@@ -103,7 +103,3 @@ If I had more time, I would add:
 - Undo functionality
 - Batch processing for multiple documents
 - Export redacted content report
-
-## Author
-
-Built as part of the McCarren Applied AI Challenge
