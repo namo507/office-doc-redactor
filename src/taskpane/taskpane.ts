@@ -60,7 +60,7 @@ async function redactDocument() {
     });
   } catch (error) {
     console.error('Error during redaction:', error);
-    updateStatus('Error: ' + error.message);
+    updateStatus('Error: ' + (error instanceof Error ? error.message : String(error)));
   }
 }
 

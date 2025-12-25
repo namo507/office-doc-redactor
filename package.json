@@ -1,0 +1,46 @@
+{
+  "name": "office-doc-redactor",
+  "version": "1.0.0",
+  "description": "Word Add-in for redacting sensitive information from documents",
+  "main": "dist/taskpane.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "dev-server": "webpack serve --mode development",
+    "start": "office-addin-debugging start manifest.xml",
+    "start:desktop": "office-addin-debugging start manifest.xml desktop",
+    "start:web": "office-addin-debugging start manifest.xml web",
+    "stop": "office-addin-debugging stop manifest.xml",
+    "validate": "office-addin-manifest validate manifest.xml",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "office",
+    "word",
+    "add-in",
+    "redaction",
+    "privacy"
+  ],
+  "author": "namo507",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/office-js": "^1.0.377",
+    "@types/office-runtime": "^1.0.35",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "office-addin-debugging": "^5.0.12",
+    "office-addin-dev-certs": "^1.12.2",
+    "office-addin-manifest": "^1.12.8",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/namo507/office-doc-redactor.git"
+  }
+}
